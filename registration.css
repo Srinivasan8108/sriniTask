@@ -1,0 +1,130 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #224a54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 400px;
+  height: fit-content;
+  background: white;
+  color: #224a54;
+  border-radius: 10px 40px 10px 40px;
+}
+form h1 {
+  font-weight: 600;
+}
+label {
+  font-weight: 600;
+  margin: 2px;
+}
+.inputBox {
+  padding: 0.4em;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #224a54;
+}
+.error,
+.error .selecting {
+  color: red;
+}
+.error .inputBox {
+  border-bottom: 1px solid red;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0.8rem 0;
+}
+.selecting {
+  cursor: pointer;
+}
+
+.btns {
+  outline: none;
+  border: none;
+  background-color: #224a54;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  width: 50%;
+  padding: 0.4em 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.formChange {
+  color: #224a54;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formChange:hover {
+  text-decoration: underline;
+}
+.errorMsgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(37, 36, 36, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #224a54;
+  padding: 4rem 2rem;
+  border-radius: 40px;
+}
+@media screen and (max-width: 425px) {
+  body {
+    height: 100vh;
+    margin: 4px;
+    padding: 10px;
+  }
+  form {
+    padding: 5px;
+    width: 100%;
+    height: fit-content;
+  }
+  .inputField {
+    width: 90%;
+    margin: 0.4rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    margin: 4px;
+    padding: 10px;
+  }
+  form {
+    padding: 5px;
+    width: 80vw;
+    height: fit-content;
+  }
+  .inputField {
+    width: 90%;
+    margin: 0.4rem 0;
+  }
+}

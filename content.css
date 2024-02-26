@@ -1,0 +1,76 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f1efef;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #27374d;
+  border-radius: 20px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+body {
+  align-items: center;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #224a54;
+  color: white;
+  height: 50px;
+  position: relative;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-container {
+  width: 80%;
+  height: fit-content;
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 10px 0;
+}
+table {
+  border-collapse: collapse;
+  border-bottom: 2px solid #224a54;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 0px #e4e1e1;
+}
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #224a54;
+  color: white;
+}
+tr {
+  text-align: center;
+}
+table th,
+table td {
+  padding: 12px 15px;
+}
+tbody tr:nth-last-of-type(even) {
+  background-color: #ece9e9;
+}
+.openBtn {
+  cursor: pointer;
+}
+.openBtn:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: start;
+  }
+}

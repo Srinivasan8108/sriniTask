@@ -1,0 +1,62 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  align-items: center;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #224a54;
+  color: white;
+  height: 50px;
+}
+.employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  margin: 10px 0;
+}
+.empCard {
+  background-color: #224a54;
+  color: white;
+  width: 400px;
+  height: fit-content;
+  box-shadow: -6px 10px 15px 1px #e0e0e0;
+  border-radius: 10px;
+}
+.profileImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.aboutEmp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 20px;
+}
+.empProDtl {
+  text-transform: capitalize;
+}
+.backArrow {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  font-size: 24px;
+  color: #224a54;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+.backArrow:hover {
+  transform: scale(1.1);
+}
